@@ -2,6 +2,6 @@
 
 Under Construction - Coming Soon!
 
-<a href="jayjdoll.dev" target="_blank">💻 Check it out here!</a>
+<a href="https://jayjdoll.dev" target="_blank">💻 Check it out here!</a>
 
 
