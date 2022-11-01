@@ -4,7 +4,7 @@ const Title = () => {
   return (
     <>
       <Heading>jayjdoll.dev</Heading>
-      <Subheading>Coming Soon</Subheading>
+      <Subheading>11/19/2022</Subheading>
     </>
   );
 };
