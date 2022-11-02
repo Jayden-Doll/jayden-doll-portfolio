@@ -7,7 +7,6 @@ body {
   min-height: 100vh;
 
   /* background: rgb(42, 49, 83); */
-  color: #7f7bd4;
   background: linear-gradient(0deg, rgb(26, 30, 52) 0%, rgb(10, 10, 10) 100%);
 
   -webkit-font-smoothing: antialiased;
