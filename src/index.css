@@ -6,14 +6,19 @@ body {
   text-align: center;
   min-height: 100vh;
 
-  /* background: rgb(42, 49, 83); */
-  background: linear-gradient(0deg, rgb(26, 30, 52) 0%, rgb(10, 10, 10) 100%);
+  background: linear-gradient(0deg, #1a1e34 -15%, #0a0a0a 100%);
+
+  /* Colors: */
+  /* #1A1E34 blue-theme */
+  /* #33221A orange-theme */
+  /* #271A33 purple-theme */
+  /* #25331A green-theme */
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 ::selection {
-  background-color: rgb(26, 30, 52);
+  background-color: #1a1e34;
   color: white;
 }
