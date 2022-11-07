@@ -1,10 +1,17 @@
-import Title from "./components/title.component";
+import { Wrapper } from "./App.styles.jsx";
+import Navbar from "./components/main/navbar/navbar.component";
+import HeroSection from "./components/sections/hero-section/hero-section.component";
 
 function App() {
+  const calculateTheme = () => {
+    return "green";
+  };
+
   return (
-    <div className="App">
-      <Title />
-    </div>
+    <Wrapper data-theme={calculateTheme()}>
+      <Navbar />
+      <HeroSection />
+    </Wrapper>
   );
 }
 

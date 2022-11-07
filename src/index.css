@@ -1,10 +1,49 @@
+* {
+  transition: color 0s ease-in;
+  box-sizing: border-box;
+}
+
+:root {
+  --fontsize-title: 2.8rem;
+}
+
+[data-theme="blue"] {
+  --text-gradient: -webkit-linear-gradient(-225deg, #4ae4a7 25%, #22e1ff 75%);
+  --text-primary: #def7ff;
+  --text-secondary: #adbfc4;
+  --color-opaque: rgba(74, 228, 166, 0.4);
+}
+
+[data-theme="orange"] {
+  --text-gradient: -webkit-linear-gradient(-225deg, #ffed21 25%, #ff7a21 75%);
+  --text-primary: #ffecde;
+  --text-secondary: #c4b6ad;
+  --color-opaque: rgba(255, 237, 33, 0.4);
+}
+
+[data-theme="purple"] {
+  --text-gradient: -webkit-linear-gradient(-225deg, #ffadff 25%, #ab77ff 75%);
+  --text-primary: #f7deff;
+  --text-secondary: #baadc4;
+  --color-opaque: rgba(255, 173, 255, 0.4);
+}
+
+[data-theme="green"] {
+  --text-gradient: -webkit-linear-gradient(-225deg, #eaff9e 25%, #7aff6b 75%);
+  --text-primary: #e1ffde;
+  --text-secondary: #adc4ad;
+  --color-opaque: rgba(234, 255, 158, 0.4);
+}
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
   text-align: center;
-  min-height: 100vh;
+  width: 100%;
+
+  font-family: "Fira Code";
 
   background-color: #181818;
 
@@ -13,6 +52,6 @@ body {
 }
 
 ::selection {
-  background-color: #1a1e34;
-  color: white;
+  background-color: var(--text-primary);
+  color: #181818;
 }
