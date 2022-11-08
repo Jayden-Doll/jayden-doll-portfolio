@@ -9,6 +9,7 @@ export const Wrapper = styled.section`
   justify-content: flex-start;
   align-items: center;
   text-align: center;
+  padding-top: 12rem;
   margin-bottom: 6rem;
   h1,
   h2,
@@ -24,13 +25,4 @@ export const SkillsContent = styled.div`
   flex-direction: column;
   width: auto;
   height: 100%;
-`;
-
-export const Title = styled.h3`
-  font-size: var(--fontsize-title);
-  background: var(--text-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 700;
-  text-align: left;
 `;

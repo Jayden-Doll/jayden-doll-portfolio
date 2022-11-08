@@ -5,7 +5,7 @@ import SkillsSection from "./components/sections/skills-section/skills-section.c
 
 function App() {
   const calculateTheme = () => {
-    return "blue";
+    return "green";
   };
 
   return (

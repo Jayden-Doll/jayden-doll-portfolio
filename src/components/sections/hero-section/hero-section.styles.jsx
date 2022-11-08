@@ -9,7 +9,7 @@ export const Wrapper = styled.section`
   justify-content: flex-start;
   align-items: center;
   text-align: center;
-  margin-bottom: 8rem;
+
   h1,
   h2,
   p {

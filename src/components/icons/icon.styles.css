@@ -1,0 +1,7 @@
+.highlight {
+  fill: var(--text-primary);
+}
+
+.shadow {
+  fill: var(--text-secondary);
+}

@@ -11,7 +11,7 @@ export const NavWrapper = styled.div`
 `;
 
 export const NavContent = styled.nav`
-  padding: 0 3rem;
+  padding: 0 4%;
   width: 100%;
   display: flex;
   justify-content: space-between;

@@ -12,6 +12,6 @@ export const Content = styled.main`
   display: flex;
   height: auto;
   width: 100%;
-  padding: 0 8rem;
+  padding: 0 9%;
   flex-direction: column;
 `;
