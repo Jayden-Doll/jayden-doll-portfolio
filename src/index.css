@@ -4,7 +4,11 @@
 }
 
 :root {
-  --fontsize-title: 2.8rem;
+  --fontsize-title-hero: 3.2rem;
+  --fontsize-subtitle-hero: 3rem;
+  --fontsize-description-hero: 1.5rem;
+
+  --fontsize-title: 2rem;
 }
 
 [data-theme="blue"] {
@@ -36,10 +40,10 @@
 }
 
 body {
-  display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  height: auto;
   text-align: center;
   width: 100%;
 

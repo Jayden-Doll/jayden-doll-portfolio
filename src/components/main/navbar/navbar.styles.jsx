@@ -4,9 +4,9 @@ import { FaPalette } from "react-icons/fa";
 
 export const NavWrapper = styled.div`
   display: flex;
-  width: 100vw;
+  width: 100%;
   height: 6rem;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
   color: var(--text-primary);
 `;
 
@@ -25,9 +25,9 @@ export const NavLinks = styled.ul`
   justify-content: center;
   align-items: center;
   list-style: none;
-  font-size: 0.9rem;
+  font-size: 1rem;
   padding-left: 0;
-  gap: 2.5rem;
+  gap: 3rem;
 `;
 
 export const NavLink = styled.li`
@@ -46,7 +46,7 @@ export const NavLink = styled.li`
 
   :hover {
     cursor: pointer;
-    margin-top: 1.2%;
+    margin-top: 1%;
 
     a {
       color: var(--text-secondary);
