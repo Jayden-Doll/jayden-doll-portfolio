@@ -1,10 +1,10 @@
 import "../icon.styles.css";
 
-const GitIcon = () => {
+const GitIcon = ({ width, height }) => {
   return (
     <svg
-      width="250"
-      height="250"
+      width={width}
+      height={height}
       viewBox="0 0 250 250"
       fill="none"
       xmlns="http://www.w3.org/2000/svg">

@@ -9,7 +9,7 @@ export const Wrapper = styled.section`
   justify-content: flex-start;
   align-items: center;
   text-align: center;
-  padding-top: 12rem;
+  padding-top: 14rem;
   margin-bottom: 6rem;
   h1,
   h2,

@@ -1,9 +1,9 @@
 import { TitleContainer, TitleUnderline, TitleText } from "./title.styles";
 
-const Title = (props) => {
+const Title = ({ text }) => {
   return (
     <TitleContainer>
-      <TitleText>{props.text}</TitleText>
+      <TitleText>{text}</TitleText>
       <TitleUnderline />
     </TitleContainer>
   );

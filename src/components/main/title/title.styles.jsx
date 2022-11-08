@@ -14,7 +14,7 @@ export const TitleUnderline = styled.div`
   align-self: flex-end;
 `;
 
-export const TitleText = styled.h3`
+export const TitleText = styled.p`
   font-size: var(--fontsize-title);
   background: var(--text-gradient);
   -webkit-background-clip: text;

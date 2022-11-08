@@ -115,11 +115,22 @@ export const NavLogo = styled.p`
   }
 `;
 
+export const ThemeIconContainer = styled.div`
+  display: flex;
+
+  width: auto;
+  height: auto;
+  transform: translateX(0.5rem);
+`;
+
 export const ThemeIcon = styled(FaPalette)`
+  width: 35px;
   font-size: 2rem;
   padding: 0.5rem;
+
   color: var(--text-primary);
   transition: 0.2s ease;
+  display: flex;
 
   :hover {
     cursor: pointer;

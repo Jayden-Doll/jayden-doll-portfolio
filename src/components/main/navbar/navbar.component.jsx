@@ -7,6 +7,7 @@ import {
   ResumeLinkContainer,
   NavResumeLink,
   ThemeIcon,
+  ThemeIconContainer,
 } from "./navbar.styles";
 
 const Navbar = () => {
@@ -17,7 +18,9 @@ const Navbar = () => {
           <a href="/">JD</a>
         </NavLogo>
         <NavLinks>
-          <ThemeIcon />
+          <ThemeIconContainer as="li">
+            <ThemeIcon />
+          </ThemeIconContainer>
           <NavLink>
             <a href="/">Projects</a>
           </NavLink>
@@ -27,7 +30,7 @@ const Navbar = () => {
           <NavLink>
             <a href="">Contact</a>
           </NavLink>
-          <ResumeLinkContainer>
+          <ResumeLinkContainer as="li">
             <NavResumeLink>
               <a href="">Resume</a>
             </NavResumeLink>
