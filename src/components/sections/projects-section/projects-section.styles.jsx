@@ -94,12 +94,6 @@ export const ProjectImage = styled.img`
   width: 150%;
   height: 50%;
   border-radius: 0.2rem;
-  transition: transform 0.2s ease;
-  will-change: transform;
-
-  :hover {
-    transform: translateX(-4.5%) translateY(-8%) scale(101%);
-  }
 `;
 
 export const ProjectTitle = styled.header`
