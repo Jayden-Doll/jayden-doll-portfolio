@@ -5,10 +5,11 @@
 
 :root {
   --fontsize-title-hero: 3.2rem;
+  --fontsize-title-project: 1.2rem;
   --fontsize-subtitle-hero: 3rem;
   --fontsize-description-hero: 1.5rem;
 
-  --fontsize-title: 2.5rem;
+  --fontsize-title: 2.8rem;
 }
 
 [data-theme="blue"] {
@@ -55,7 +56,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-::selection {
+*::selection {
   background-color: var(--text-primary);
   color: #181818;
+}
+
+body::-webkit-scrollbar {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #181818;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #333;
+  border-radius: 0.2rem 0rem 0rem 0.2rem;
 }

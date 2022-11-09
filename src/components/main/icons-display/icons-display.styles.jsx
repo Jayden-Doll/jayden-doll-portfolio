@@ -8,7 +8,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: flex-start;
   row-gap: 3rem;
-  column-gap: 5rem;
+  column-gap: 5.4rem;
   max-width: 75%;
   padding: 5rem 0;
 `;
@@ -19,7 +19,7 @@ export const IconContainer = styled.div`
   align-items: center;
   flex-direction: column;
   gap: 1rem;
-  max-width: 4rem;
+  max-width: 4.8rem;
   transition: 0.2s ease;
 
   svg {
@@ -35,7 +35,6 @@ export const IconContainer = styled.div`
     p {
       will-change: font-weight;
       color: var(--text-primary);
-      font-weight: 500;
       cursor: default;
     }
   }
@@ -48,5 +47,5 @@ export const IconName = styled.p`
   font-size: 1.1rem;
   transition: 0.2s ease;
   text-align: center;
-  padding-bottom: 0.1rem;
+  padding: 0.1rem;
 `;

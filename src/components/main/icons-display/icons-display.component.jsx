@@ -23,7 +23,7 @@ const IconsDisplay = () => {
       </IconContainer>
       <IconContainer>
         <JSIcon />
-        <IconName>Javascript</IconName>
+        <IconName>JavaScript</IconName>
       </IconContainer>
       <IconContainer>
         <ReactIcon />

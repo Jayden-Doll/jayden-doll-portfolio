@@ -22,4 +22,9 @@ export const TitleText = styled.p`
   font-weight: 700;
   text-align: left;
   margin-bottom: 0;
+
+  ::selection {
+    -webkit-background-clip: none;
+    -webkit-text-fill-color: #181818;
+  }
 `;

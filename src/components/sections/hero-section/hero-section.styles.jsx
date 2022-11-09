@@ -34,6 +34,11 @@ export const Title = styled.h1`
   -webkit-text-fill-color: transparent;
   font-weight: 800;
   text-align: left;
+
+  ::selection {
+    -webkit-background-clip: none;
+    -webkit-text-fill-color: #181818;
+  }
 `;
 
 export const Subtitle = styled.h2`
@@ -61,7 +66,9 @@ export const CtaButtonContainer = styled.div`
   background: var(--text-gradient);
   padding: 0.1rem;
   border-radius: 0.2rem;
+  margin-top: 0.5rem;
   transition: 0.2s ease;
+  user-select: none;
 
   :hover {
     -webkit-box-shadow: 0px 0px 12px 3px var(--color-opaque);
