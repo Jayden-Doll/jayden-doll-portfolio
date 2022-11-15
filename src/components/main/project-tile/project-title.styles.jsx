@@ -37,7 +37,7 @@ export const ProjectDecoration = styled.div`
   display: flex;
   width: 150%;
   height: 100%;
-  left: -7%;
+  left: -6.5%;
   top: -8%;
   background: var(--text-gradient);
   position: absolute;
@@ -67,6 +67,7 @@ export const ProjectTitle = styled.header`
   background: var(--text-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  border: 0.1px solid #181818;
   font-weight: 800;
   text-align: left;
   margin-bottom: 0;
@@ -79,7 +80,7 @@ export const ProjectTitle = styled.header`
 
 export const ProjectDescription = styled.p`
   color: var(--text-primary);
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-family: "Fira Code";
   font-weight: 500;
   min-width: 150%;
@@ -88,7 +89,7 @@ export const ProjectDescription = styled.p`
 
 export const ProjectTag = styled.span`
   color: var(--text-secondary);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-family: "Fira Code";
   font-weight: 500;
   padding-bottom: 0.5rem;
@@ -98,21 +99,24 @@ export const ProjectTag = styled.span`
 
 export const ProjectLinkContainer = styled.div`
   display: flex;
-  gap: 1.2rem;
+  gap: 0.7rem;
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  height: auto;
+  height: 50px;
+  transform: translateX(-0.5rem);
 `;
 
 export const ProjectLink = styled.a`
   color: var(--text-secondary);
-  cursor: pointer;
   transition: 0.2s ease;
+  padding: 0.5rem;
 
   :hover {
     color: var(--text-primary);
     transform: translateY(-0.1rem);
+    padding: 0.5rem;
+    cursor: pointer;
   }
 `;
 

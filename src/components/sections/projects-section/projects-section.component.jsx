@@ -22,15 +22,17 @@ const ProjectsSection = () => {
             imgSrc={gsmini}
             altText=""
             title="GS Mini Product Page"
-            desc="This is the description."
+            desc="An organized product page showcasing a guitar, with a breathable design and smooth animations."
+            desc2="Features a playable guitar element with sounds recorded directly from the real guitar."
             tags="HTML SASS JAVASCRIPT FIGMA"
             codeLink="https://github.com/Jayden-Doll/GuitarSite-Redesign"
             liveLink="https://taylor-mini-mahogany.netlify.app/"
           />
           <ProjectTile
             imgSrc={yogadays}
-            title="YogaDays Yoga Tracker"
-            desc="This is the description."
+            title="YogaDays Yoga Calendar"
+            desc="A simple web app for keeping track of yoga progress. Click on a day to watch a randomly picked yoga routine video."
+            desc2="Utilizes the localStorage API and React state to store information for each day."
             tags="REACT STYLED-COMPONENTS CSS FIGMA"
             codeLink="https://github.com/Jayden-Doll/YogaDays-Yoga-Tracker"
             liveLink="https://yogadays.netlify.app/"
@@ -38,7 +40,8 @@ const ProjectsSection = () => {
           <ProjectTile
             imgSrc={matchem}
             title="Match 'Em"
-            desc="This is the description."
+            desc="A memory matching game built for kids. Features an interactive and enjoyable interface with a menu screen and fun animations."
+            desc2="Includes options to select the amount of cards and theme of the game."
             tags="HTML CSS JAVASCRIPT"
             codeLink="https://github.com/Jayden-Doll/Matchem-Game"
             liveLink="https://matchemupgame.com/"
@@ -46,7 +49,8 @@ const ProjectsSection = () => {
           <ProjectTile
             imgSrc={planetviewer}
             title="PlanetViewer"
-            desc="This is the description."
+            desc="A site featuring a rotating solar system, seamless page transitions, and 3D models of the planets rendered with Spline."
+            desc2="Planet data is presented in a structured way and utilizes a custom serverless API that feeds data for each planet on page render."
             tags="REACT STYLED-COMPONENTS FRAMER-MOTION FIGMA SPLINE"
             codeLink="https://github.com/Jayden-Doll/PlanetViewer"
             liveLink="https://planet-viewer3d.netlify.app/"

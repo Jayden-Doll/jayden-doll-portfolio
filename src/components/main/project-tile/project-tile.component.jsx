@@ -14,7 +14,15 @@ import {
   LiveLinkIcon,
 } from "./project-title.styles";
 
-const ProjectTile = ({ imgSrc, title, desc, tags, codeLink, liveLink }) => {
+const ProjectTile = ({
+  imgSrc,
+  title,
+  desc,
+  desc2,
+  tags,
+  codeLink,
+  liveLink,
+}) => {
   return (
     <ProjectContainer>
       <ProjectContent>
@@ -27,6 +35,7 @@ const ProjectTile = ({ imgSrc, title, desc, tags, codeLink, liveLink }) => {
         <ProjectTitle>{title}</ProjectTitle>
         <ProjectTag>{tags}</ProjectTag>
         <ProjectDescription>{desc}</ProjectDescription>
+        {desc2 && <ProjectDescription>{desc2}</ProjectDescription>}
         <ProjectLinkContainer>
           <ProjectLink
             href={codeLink}

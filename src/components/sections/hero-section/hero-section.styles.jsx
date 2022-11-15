@@ -80,8 +80,8 @@ export const CtaButtonContainer = styled.div`
 
 export const CtaButtonLink = styled.p`
   background: #181818;
-  padding-top: 0.6rem;
-  padding-bottom: 0.6rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
   border-radius: 0.15rem;
 
   :hover {

@@ -9,8 +9,7 @@ export const Wrapper = styled.section`
   justify-content: flex-start;
   align-items: center;
   text-align: center;
-  padding-top: 11rem;
-  padding-bottom: 15%;
+  padding-top: 6rem;
   h1,
   h2,
   p {
@@ -35,6 +34,6 @@ export const ProjectsWrapper = styled.div`
   width: 100%;
   flex-wrap: wrap;
   height: auto;
-  padding: 5rem 0;
+  padding-top: 6rem;
   row-gap: 8rem;
 `;

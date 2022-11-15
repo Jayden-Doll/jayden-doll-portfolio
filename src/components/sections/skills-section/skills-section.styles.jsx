@@ -10,6 +10,7 @@ export const Wrapper = styled.section`
   align-items: center;
   text-align: center;
   padding-top: 14rem;
+  position: relative;
 
   h1,
   h2,
