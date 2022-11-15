@@ -49,8 +49,8 @@ export const ProjectDecorationContent = styled.div`
   background: #181818;
   width: 100%;
   height: auto;
-  margin: 0.15rem;
-  border-radius: 0.1rem;
+  margin: 0.075rem;
+  border-radius: 0.2rem;
 `;
 
 export const ProjectImage = styled.img`
@@ -82,23 +82,27 @@ export const ProjectDescription = styled.p`
   font-size: 1.1rem;
   font-family: "Fira Code";
   font-weight: 500;
-  min-width: 120%;
+  min-width: 150%;
   padding-bottom: 1rem;
 `;
 
 export const ProjectTag = styled.span`
   color: var(--text-secondary);
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-family: "Fira Code";
   font-weight: 500;
-  padding-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  line-height: 1.5rem;
+  min-width: 125%;
 `;
 
 export const ProjectLinkContainer = styled.div`
   display: flex;
-  gap: 1.5rem;
-  justify-content: center;
+  gap: 1.2rem;
+  justify-content: flex-start;
   align-items: center;
+  width: 100%;
+  height: auto;
 `;
 
 export const ProjectLink = styled.a`
@@ -108,15 +112,16 @@ export const ProjectLink = styled.a`
 
   :hover {
     color: var(--text-primary);
+    transform: translateY(-0.1rem);
   }
 `;
 
 export const GithubIcon = styled(FaGithub)`
-  width: 25px;
+  width: 20px;
   height: auto;
 `;
 
 export const LiveLinkIcon = styled(FaExternalLinkAlt)`
-  width: 25px;
+  width: 20px;
   height: auto;
 `;

@@ -9,7 +9,7 @@ export const Wrapper = styled.section`
   justify-content: flex-start;
   align-items: center;
   text-align: center;
-  padding-top: 14rem;
+  padding-top: 11rem;
   padding-bottom: 15%;
   h1,
   h2,
@@ -25,6 +25,7 @@ export const SectionContent = styled.div`
   flex-direction: column;
   width: 100%;
   height: 100%;
+  padding-top: 3rem;
 `;
 
 export const ProjectsWrapper = styled.div`

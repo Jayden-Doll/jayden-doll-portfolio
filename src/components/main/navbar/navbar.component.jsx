@@ -22,17 +22,17 @@ const Navbar = () => {
             <ThemeIcon />
           </ThemeIconContainer>
           <NavLink>
-            <a href="/">Projects</a>
+            <a href="#projects">Projects</a>
           </NavLink>
           <NavLink>
-            <a href="">About</a>
+            <a href="#about">About</a>
           </NavLink>
           <NavLink>
-            <a href="">Contact</a>
+            <a href="#contact">Contact</a>
           </NavLink>
           <ResumeLinkContainer as="li">
             <NavResumeLink>
-              <a href="">Resume</a>
+              <a href="/">Resume</a>
             </NavResumeLink>
           </ResumeLinkContainer>
         </NavLinks>

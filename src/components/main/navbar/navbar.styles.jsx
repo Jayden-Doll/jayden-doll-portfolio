@@ -35,12 +35,18 @@ export const NavLink = styled.li`
   padding-bottom: 0.5rem; */
   box-sizing: border-box;
 
+  ::after {
+    transform: translateX(100%);
+  }
+
   @keyframes nav-hover {
     from {
-      width: 0;
+      width: 25%;
+      opacity: 0;
     }
     to {
       width: 50%;
+      opacity: 1;
     }
   }
 
@@ -52,7 +58,7 @@ export const NavLink = styled.li`
       color: var(--text-secondary);
     }
     ::after {
-      animation: nav-hover 0.2s forwards alternate ease;
+      animation: nav-hover 0.3s forwards ease;
       content: "";
       display: block;
       height: 0.1rem;
@@ -77,9 +83,12 @@ export const ResumeLinkContainer = styled.div`
   transition: 0.2s ease;
 
   :hover {
-    -webkit-box-shadow: 0px 0px 9px 3px var(--color-opaque);
-    -moz-box-shadow: 0px 0px 9px 3px var(--color-opaque);
-    box-shadow: 0px 0px 9px 3px var(--color-opaque);
+    -moz-box-shadow: 0px 0px 8px 2px var(--color-opaque),
+      0px 0px 2px 0.3px var(--text-secondary);
+    -webkit-box-shadow: 0px 0px 8px 2px var(--color-opaque),
+      0px 0px 2px 0.3px var(--text-secondary);
+    box-shadow: 0px 0px 8px 2px var(--color-opaque),
+      0px 0px 2px 0.3px var(--text-secondary);
   }
 `;
 

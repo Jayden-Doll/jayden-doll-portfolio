@@ -73,13 +73,15 @@ export const CtaButtonContainer = styled.div`
   :hover {
     -webkit-box-shadow: 0px 0px 12px 3px var(--color-opaque);
     -moz-box-shadow: 0px 0px 12px 3px var(--color-opaque);
-    box-shadow: 0px 0px 12px 4px var(--color-opaque);
+    box-shadow: 0px 0px 10px 2px var(--color-opaque),
+      0px 0px 4px 0.3px var(--text-secondary);
   }
 `;
 
 export const CtaButtonLink = styled.p`
   background: #181818;
-  padding: 0.6rem 0.25rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
   border-radius: 0.15rem;
 
   :hover {
@@ -87,7 +89,7 @@ export const CtaButtonLink = styled.p`
   }
 
   a {
-    padding: 0.3rem 0.5rem;
+    padding: 0.6rem 0.7rem;
     background: var(--text-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

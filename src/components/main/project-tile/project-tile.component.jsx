@@ -25,8 +25,8 @@ const ProjectTile = ({ imgSrc, title, desc, tags, codeLink, liveLink }) => {
           <ProjectImage src={imgSrc} />
         </ImageContainer>
         <ProjectTitle>{title}</ProjectTitle>
-        <ProjectDescription>{desc}</ProjectDescription>
         <ProjectTag>{tags}</ProjectTag>
+        <ProjectDescription>{desc}</ProjectDescription>
         <ProjectLinkContainer>
           <ProjectLink
             href={codeLink}

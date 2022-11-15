@@ -20,7 +20,7 @@ const HeroSection = () => {
         </Description>
         <CtaButtonContainer>
           <CtaButtonLink>
-            <a href="">View My Projects</a>
+            <a href="#projects">View My Projects</a>
           </CtaButtonLink>
         </CtaButtonContainer>
       </HeroContent>
