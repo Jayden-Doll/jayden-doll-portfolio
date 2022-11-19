@@ -11,6 +11,7 @@
   --fontsize-description-hero: 1.5rem;
 
   --fontsize-title: 2.4rem;
+  --fontsize-title-theme: 2rem;
 }
 
 [data-theme="blue"] {

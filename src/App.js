@@ -7,27 +7,38 @@ import AboutSection from "./components/sections/about-section/about-section.comp
 import ContactSection from "./components/sections/contact-section/contact-section.component.jsx";
 import FooterSection from "./components/main/footer/footer.component.jsx";
 
+import { useContext, useEffect } from "react";
+import GlobalContext from "./context/GlobalContext.js";
+
 function App() {
-  const calculateTheme = () => {
-    return "blue";
-    //blue
-    //orange
-    //purple
-    //green
-  };
+  const { blur, theme, setTheme } = useContext(GlobalContext);
+
+  useEffect(() => {
+    setTheme(theme);
+  }, [theme]);
+
+  useEffect(() => {
+    if (!window.localStorage.getItem("colortheme")) {
+      window.localStorage.setItem("colortheme", "blue");
+      setTheme("blue");
+    } else {
+      const storedTheme = window.localStorage.getItem("colortheme");
+      setTheme(storedTheme);
+    }
+  }, []);
 
   return (
     <>
-      <Wrapper data-theme={calculateTheme()}>
+      <Wrapper data-theme={theme}>
         <Navbar />
-        <Content>
+        <Content blur={blur}>
           <HeroSection />
           <SkillsSection />
           <ProjectsSection />
           <AboutSection />
           <ContactSection />
+          <FooterSection />
         </Content>
-        <FooterSection />
       </Wrapper>
     </>
   );
