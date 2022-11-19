@@ -10,8 +10,7 @@ export const Wrapper = styled.section`
   align-items: center;
   text-align: center;
   padding-top: 11rem;
-  position: relative;
-
+  padding-bottom: 3rem;
   h1,
   h2,
   p {
@@ -19,11 +18,18 @@ export const Wrapper = styled.section`
   }
 `;
 
-export const SkillsContent = styled.div`
+export const SectionContent = styled.div`
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
-  width: auto;
+  width: 100%;
   height: 100%;
+  padding-top: 3rem;
+`;
+
+export const FooterText = styled.p`
+  color: var(--text-secondary);
+  font-weight: 500;
+  font-family: "Fira Code";
 `;

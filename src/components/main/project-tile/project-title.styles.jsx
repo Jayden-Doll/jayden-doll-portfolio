@@ -85,6 +85,7 @@ export const ProjectDescription = styled.p`
   font-weight: 500;
   min-width: 150%;
   padding-bottom: 1rem;
+  line-height: 1.4rem;
 `;
 
 export const ProjectTag = styled.span`

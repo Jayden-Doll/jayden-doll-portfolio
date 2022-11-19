@@ -9,8 +9,7 @@ export const Wrapper = styled.section`
   justify-content: flex-start;
   align-items: center;
   text-align: center;
-  padding-top: 6rem;
-  padding-bottom: 15%;
+  padding-top: 11rem;
   h1,
   h2,
   p {
@@ -74,10 +73,18 @@ export const ProjectImage = styled.img`
   border: 2px solid var(--text-secondary);
 `;
 
+export const TextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 55%;
+`;
+
 export const AboutText = styled.p`
   color: var(--text-primary);
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
+  font-family: "Fira Code";
   text-align: left;
-  max-width: 55%;
+  line-height: 1.4rem;
 `;

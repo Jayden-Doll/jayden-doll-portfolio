@@ -15,8 +15,8 @@
 
 [data-theme="blue"] {
   --text-gradient: -webkit-linear-gradient(-225deg, #4ae4a7 30%, #22e1ff 100%);
-  --text-primary: #def7ff;
-  --text-secondary: #adbfc4;
+  --text-primary: #cbe2ea;
+  --text-secondary: #a0b0b4;
   --color-opaque: rgba(74, 228, 166, 0.5);
 }
 

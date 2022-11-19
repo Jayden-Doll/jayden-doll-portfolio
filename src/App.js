@@ -4,10 +4,12 @@ import HeroSection from "./components/sections/hero-section/hero-section.compone
 import ProjectsSection from "./components/sections/projects-section/projects-section.component.jsx";
 import SkillsSection from "./components/sections/skills-section/skills-section.component.jsx";
 import AboutSection from "./components/sections/about-section/about-section.component.jsx";
+import ContactSection from "./components/sections/contact-section/contact-section.component.jsx";
+import FooterSection from "./components/main/footer/footer.component.jsx";
 
 function App() {
   const calculateTheme = () => {
-    return "orange";
+    return "blue";
     //blue
     //orange
     //purple
@@ -23,7 +25,9 @@ function App() {
           <SkillsSection />
           <ProjectsSection />
           <AboutSection />
+          <ContactSection />
         </Content>
+        <FooterSection />
       </Wrapper>
     </>
   );
