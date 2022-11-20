@@ -25,6 +25,10 @@ export const SectionContent = styled.div`
   width: 100%;
   height: 100%;
   padding-top: 3rem;
+
+  @media (max-width: 768px) {
+    padding-top: 6rem;
+  }
 `;
 
 export const ContentWrapper = styled.div`

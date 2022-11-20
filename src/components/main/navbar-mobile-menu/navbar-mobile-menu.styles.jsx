@@ -1,16 +1,24 @@
 import styled from "styled-components";
 
+import { MdClose } from "react-icons/md";
+import { BiMenuAltLeft } from "react-icons/bi";
 import { FaPalette } from "react-icons/fa";
 
 export const NavWrapper = styled.div`
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
   display: flex;
-  width: 100%;
-  height: 6rem;
-  padding-top: 2rem;
+  width: 50%;
+  height: 100%;
   margin-bottom: 5rem;
   color: var(--text-primary);
+  background-color: #181818;
+  border-left: 0.1rem solid var(--text-primary);
+  border-bottom-left-radius: 0.2rem;
 
-  @media (max-width: 768px) {
+  @media (min-width: 768px) {
     display: none;
   }
 `;
@@ -19,9 +27,10 @@ export const NavContent = styled.nav`
   padding: 0 4%;
   width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   user-select: none;
+  padding-top: 2.2rem;
+  flex-direction: column;
 `;
 
 export const NavLinks = styled.ul`
@@ -32,6 +41,7 @@ export const NavLinks = styled.ul`
   list-style: none;
   font-size: 1rem;
   padding-left: 0;
+  flex-direction: column;
   gap: 3rem;
 `;
 
@@ -40,42 +50,15 @@ export const NavLink = styled.li`
   padding-bottom: 0.5rem; */
   box-sizing: border-box;
 
-  ::after {
-    transform: translateX(100%);
-  }
-
-  @keyframes nav-hover {
-    from {
-      width: 25%;
-      opacity: 0;
-    }
-    to {
-      width: 50%;
-      opacity: 1;
-    }
-  }
-
-  :hover {
-    cursor: pointer;
-    margin-top: 1%;
-
-    a {
-      color: var(--text-primary);
-    }
-    ::after {
-      animation: nav-hover 0.2s forwards ease;
-      content: "";
-      display: block;
-      height: 0.1rem;
-      margin-top: 0.2rem;
-      background: var(--text-gradient);
-    }
-  }
-
   a {
     transition: 0.2s ease;
     color: var(--text-secondary);
     text-decoration: none;
+
+    :hover {
+      cursor: pointer;
+      color: var(--text-primary);
+    }
   }
 `;
 
@@ -139,15 +122,30 @@ export const ThemeIconContainer = styled.div`
 
 export const ThemeIcon = styled(FaPalette)`
   width: 35px;
+  height: auto;
+  padding: 0.3rem;
   font-size: 2rem;
-  padding: 0.5rem;
 
   color: var(--text-secondary);
   transition: 0.2s ease;
   display: flex;
+  transform: translateX(-0.5rem) translateY(0.5rem);
 
   :hover {
     cursor: pointer;
     color: var(--text-primary);
+  }
+`;
+
+export const CloseButton = styled(BiMenuAltLeft)`
+  width: 50px;
+  padding: 0.5rem;
+  transform: translateY(-0.5rem);
+  height: auto;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+
+  :hover {
+    cursor: pointer;
   }
 `;

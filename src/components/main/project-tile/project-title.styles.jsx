@@ -62,13 +62,15 @@ export const ProjectImage = styled.img`
 `;
 
 export const ProjectTitle = styled.header`
-  padding: 1.5rem 0;
+  padding: 1.5rem 0.3rem;
   font-size: var(--fontsize-title-project);
   background: var(--text-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  border: 0.1px solid #181818;
+  border-right: 0.1px solid #181818;
+  border-left: 0.1px solid #181818;
   font-weight: 800;
+  transform: translateX(-0.3rem);
   text-align: left;
   margin-bottom: 0;
 

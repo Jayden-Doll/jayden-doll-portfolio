@@ -5,6 +5,7 @@ const GlobalContext = createContext();
 export const GlobalProvider = ({ children }) => {
   const [blur, setBlur] = useState(false);
   const [isThemeMenuOpen, setIsThemeMenuOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [theme, setTheme] = useState("");
 
   const values = {
@@ -14,6 +15,8 @@ export const GlobalProvider = ({ children }) => {
     setIsThemeMenuOpen,
     theme,
     setTheme,
+    isMobileMenuOpen,
+    setIsMobileMenuOpen,
   };
 
   return (

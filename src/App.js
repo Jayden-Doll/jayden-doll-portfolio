@@ -9,6 +9,7 @@ import FooterSection from "./components/main/footer/footer.component.jsx";
 
 import { useContext, useEffect } from "react";
 import GlobalContext from "./context/GlobalContext.js";
+import NavbarMobile from "./components/main/navbar-mobile/navbar-mobile.component.jsx";
 
 function App() {
   const { blur, theme, setTheme } = useContext(GlobalContext);
@@ -31,6 +32,7 @@ function App() {
     <>
       <Wrapper data-theme={theme}>
         <Navbar />
+        <NavbarMobile />
         <Content blur={blur}>
           <HeroSection />
           <SkillsSection />

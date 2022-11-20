@@ -5,11 +5,11 @@ import { MdClose } from "react-icons/md";
 export const Wrapper = styled.div`
   position: fixed;
   width: 100%;
-  height: auto;
+  height: 25%;
   display: flex;
-  z-index: 0;
   padding: 0 4%;
   z-index: 1;
+  top: 0;
   border-bottom: 0.2rem solid var(--text-primary);
   transition: 0.2s ease;
   animation: open-menu 0.2s ease alternate forwards;

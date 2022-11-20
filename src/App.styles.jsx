@@ -19,4 +19,13 @@ export const Content = styled.main`
     props.blur ? `blur(0.4rem) grayscale(0.4)` : `blur(0)`};
   pointer-events: ${(props) => (props.blur ? `none` : `default`)};
   user-select: ${(props) => (props.blur ? `none` : `default`)};
+
+  @media (max-width: 768px) {
+    padding-top: 9rem;
+  }
+
+  @media (max-width: 375px) {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
 `;

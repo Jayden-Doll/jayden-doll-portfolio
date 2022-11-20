@@ -47,6 +47,10 @@ export const Subtitle = styled.h2`
   font-weight: 700;
   font-size: var(--fontsize-subtitle-hero);
   padding-right: 20%;
+
+  @media (max-width: 768px) {
+    padding-right: 0;
+  }
 `;
 
 export const Description = styled.p`
@@ -57,6 +61,15 @@ export const Description = styled.p`
   font-family: "Fira Code";
   padding-right: 30%;
   padding-bottom: 1.5rem;
+
+  @media (max-width: 768px) {
+    padding-right: 0;
+    padding-bottom: 1rem;
+  }
+
+  @media (max-width: 375px) {
+    padding-bottom: 0;
+  }
 `;
 
 export const CtaButtonContainer = styled.div`
@@ -97,5 +110,9 @@ export const CtaButtonLink = styled.p`
     text-decoration: none;
     font-size: 1.3rem;
     font-weight: 500;
+
+    @media (max-width: 768px) {
+      font-size: 1.1rem;
+    }
   }
 `;
