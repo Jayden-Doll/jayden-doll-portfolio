@@ -9,19 +9,18 @@ export const Wrapper = styled.div`
 `;
 
 export const Content = styled.main`
-  transition: 0.4s ease;
   display: flex;
   height: auto;
   width: 100%;
   padding: 0 9%;
   flex-direction: column;
-  filter: ${(props) =>
-    props.blur ? `blur(0.4rem) grayscale(0.4)` : `blur(0)`};
+  filter: ${(props) => (props.blur ? `blur(0.2rem) grayscale(0.5)` : `none`)};
   pointer-events: ${(props) => (props.blur ? `none` : `default`)};
   user-select: ${(props) => (props.blur ? `none` : `default`)};
+  transition: 0.4s ease;
 
   @media (max-width: 768px) {
-    padding-top: 9rem;
+    padding-top: 7rem;
   }
 
   @media (max-width: 375px) {

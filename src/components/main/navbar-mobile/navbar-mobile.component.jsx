@@ -15,13 +15,13 @@ const NavbarMobile = () => {
     useContext(GlobalContext);
 
   const onClickHandler = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
     setBlur(!blur);
+    setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
   return (
     <NavWrapper>
-      {isMobileMenuOpen && <NavbarMobileMenu />}
+      <NavbarMobileMenu show={isMobileMenuOpen} />
       <NavContent>
         <NavLogo>
           <a href="/">JD</a>

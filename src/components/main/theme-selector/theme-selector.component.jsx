@@ -19,13 +19,16 @@ const ThemeSelector = () => {
     setBlur,
     isThemeMenuOpen,
     setIsThemeMenuOpen,
+    isMobileMenuOpen,
     theme,
     setTheme,
   } = useContext(GlobalContext);
 
   const onClickHandler = () => {
-    setBlur(!blur);
     setIsThemeMenuOpen(!isThemeMenuOpen);
+    if (blur && isMobileMenuOpen) {
+      setBlur(blur);
+    } else setBlur(false);
   };
 
   const blueHandler = () => {
@@ -48,13 +51,13 @@ const ThemeSelector = () => {
   return (
     <Wrapper>
       <ThemeContent>
-        <ThemeTitle>Theme Selector</ThemeTitle>
+        <ThemeTitle>Theme Select</ThemeTitle>
         <ThemeOptionsContainer>
+          <CloseButton onClick={onClickHandler} />
           <ThemeOptionBlue onClick={blueHandler}></ThemeOptionBlue>
           <ThemeOptionOrange onClick={orangeHandler}></ThemeOptionOrange>
           <ThemeOptionPurple onClick={purpleHandler}></ThemeOptionPurple>
           <ThemeOptionGreen onClick={greenHandler}></ThemeOptionGreen>
-          <CloseButton onClick={onClickHandler} />
         </ThemeOptionsContainer>
       </ThemeContent>
     </Wrapper>

@@ -1,5 +1,7 @@
 import ThemeSelector from "../theme-selector/theme-selector.component";
 
+import { motion } from "framer-motion";
+
 import {
   NavWrapper,
   NavContent,
@@ -31,16 +33,16 @@ const NavbarMobileMenu = () => {
   };
 
   const onThemeMenuClickHandler = () => {
+    setIsThemeMenuOpen(!isThemeMenuOpen);
+    setBlur(!blur);
+
     if (blur) {
       setBlur(true);
-      setIsThemeMenuOpen(!isThemeMenuOpen);
-    } else {
-      setBlur(!blur);
     }
   };
 
   return (
-    <NavWrapper>
+    <NavWrapper show={isMobileMenuOpen}>
       {isThemeMenuOpen && <ThemeSelector />}
       <NavContent>
         <CloseButton onClick={onMenuClickHandler} />
@@ -54,8 +56,10 @@ const NavbarMobileMenu = () => {
           <NavLink>
             <a href="#contact">Contact</a>
           </NavLink>
-          <ThemeIconContainer as="li">
-            <ThemeIcon onClick={onThemeMenuClickHandler} />
+          <ThemeIconContainer
+            as="li"
+            onClick={onThemeMenuClickHandler}>
+            <ThemeIcon />
           </ThemeIconContainer>
           <ResumeLinkContainer as="li">
             <NavResumeLink>

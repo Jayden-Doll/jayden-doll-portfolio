@@ -7,13 +7,23 @@ export const Wrapper = styled.div`
   width: 100%;
   height: 25%;
   display: flex;
+  justify-content: flex-end;
   padding: 0 4%;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   border-bottom: 0.2rem solid var(--text-primary);
   transition: 0.2s ease;
   animation: open-menu 0.2s ease alternate forwards;
   background-color: #181818;
+
+  @media (max-width: 768px) {
+    justify-content: flex-start;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    border-left: 0.1rem solid var(--text-primary);
+    border-bottom: 0;
+  }
 
   @keyframes open-menu {
     from {
@@ -28,12 +38,12 @@ export const Wrapper = styled.div`
 export const ThemeContent = styled.div`
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  width: 100%;
+  align-items: flex-end;
+  width: auto;
   flex-direction: column;
   height: 100%;
   background-color: #181818;
-  padding: 5% 6%;
+  padding: 5% 6.5%;
 
   button {
     transition: border 0.2s ease;
@@ -45,6 +55,11 @@ export const ThemeContent = styled.div`
       cursor: pointer;
     }
   }
+
+  @media (max-width: 768px) {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 `;
 
 export const ThemeTitle = styled.p`
@@ -53,13 +68,19 @@ export const ThemeTitle = styled.p`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 700;
-  text-align: left;
+  text-align: right;
   margin: 0;
-  width: 50%;
+  width: 100%;
 
   ::selection {
     -webkit-background-clip: none;
     -webkit-text-fill-color: #181818;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1.8rem;
+    width: 50%;
+    text-align: left;
   }
 `;
 
@@ -69,6 +90,10 @@ export const ThemeOptionsContainer = styled.div`
   height: auto;
   gap: 2rem;
   padding-top: 1rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const ThemeOptionBlue = styled.button`
@@ -96,8 +121,8 @@ export const ThemeOptionGreen = styled.button`
 `;
 
 export const CloseButton = styled(MdClose)`
-  width: 50px;
-  height: 25px;
+  width: 30px;
+  height: auto;
   color: var(--text-secondary);
   transition: 0.2s ease;
 

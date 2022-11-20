@@ -6,17 +6,25 @@ import { FaPalette } from "react-icons/fa";
 
 export const NavWrapper = styled.div`
   position: fixed;
+  display: ${(props) => (props.show === true ? `flex` : `none`)};
   z-index: 1;
   top: 0;
-  right: 0;
-  display: flex;
   width: 50%;
   height: 100%;
-  margin-bottom: 5rem;
   color: var(--text-primary);
   background-color: #181818;
   border-left: 0.1rem solid var(--text-primary);
   border-bottom-left-radius: 0.2rem;
+  animation: 0.2s menu-slide both alternate;
+
+  @keyframes menu-slide {
+    0% {
+      right: -100%;
+    }
+    100% {
+      right: 0;
+    }
+  }
 
   @media (min-width: 768px) {
     display: none;
@@ -29,7 +37,7 @@ export const NavContent = styled.nav`
   display: flex;
   align-items: center;
   user-select: none;
-  padding-top: 2.2rem;
+  padding-top: 1.5rem;
   flex-direction: column;
 `;
 
