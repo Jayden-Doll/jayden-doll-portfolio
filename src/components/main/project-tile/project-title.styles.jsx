@@ -11,11 +11,14 @@ export const ProjectContainer = styled.div`
   flex-direction: column;
   display: flex;
   position: relative;
+
+  @media (max-width: 768px) {
+    min-width: 55%;
+  }
 `;
 
 export const ProjectContent = styled.div`
   display: flex;
-  max-width: 100%;
   height: auto;
   flex-direction: column;
   justify-content: center;
@@ -25,6 +28,10 @@ export const ProjectContent = styled.div`
   max-width: 50%;
   transform: translateX(7%);
   text-align: left;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
 `;
 
 export const ImageContainer = styled.div`
@@ -77,6 +84,10 @@ export const ProjectTitle = styled.header`
   ::selection {
     -webkit-background-clip: none;
     -webkit-text-fill-color: #181818;
+  }
+
+  @media (max-width: 768px) {
+    padding: 1.5rem 0;
   }
 `;
 

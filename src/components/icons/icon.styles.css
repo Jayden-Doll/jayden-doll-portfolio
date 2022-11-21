@@ -10,3 +10,10 @@ svg {
   width: 4rem;
   height: 4rem;
 }
+
+@media (max-width: 768px) {
+  svg {
+    width: 3rem;
+    height: 3rem;
+  }
+}

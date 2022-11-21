@@ -17,11 +17,11 @@
 @media (max-width: 768px) {
   :root {
     --fontsize-title-hero: 2.4rem;
-    --fontsize-title-project: 1.2rem;
-    --fontsize-subtitle-hero: 2rem;
-    --fontsize-description-hero: 1.4rem;
+    --fontsize-title-project: 1rem;
+    --fontsize-subtitle-hero: 1.8rem;
+    --fontsize-description-hero: 1.2rem;
 
-    --fontsize-title: 2.4rem;
+    --fontsize-title: 2rem;
     --fontsize-title-theme: 2rem;
   }
 }

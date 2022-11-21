@@ -25,6 +25,7 @@ export const SectionContent = styled.div`
   width: 100%;
   height: 100%;
   padding-top: 3rem;
+
   @media (max-width: 768px) {
     padding-top: 6rem;
   }
@@ -34,9 +35,14 @@ export const ProjectsWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: flex-start;
+
   width: 100%;
   flex-wrap: wrap;
   height: auto;
   padding-top: 6rem;
   row-gap: 8rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;

@@ -41,12 +41,20 @@ export const ContentWrapper = styled.div`
   row-gap: 2rem;
   column-gap: 4rem;
   transform: translateX(2%);
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const ImageContainer = styled.div`
   max-width: 25%;
   height: 50%;
   position: relative;
+
+  @media (max-width: 768px) {
+    max-width: 75%;
+  }
 `;
 
 export const ProjectDecoration = styled.div`
@@ -82,6 +90,10 @@ export const TextContainer = styled.div`
   flex-direction: column;
   gap: 1.5rem;
   max-width: 55%;
+
+  @media (max-width: 768px) {
+    max-width: 90%;
+  }
 `;
 
 export const AboutText = styled.p`

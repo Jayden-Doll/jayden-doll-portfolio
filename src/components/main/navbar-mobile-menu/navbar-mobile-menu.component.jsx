@@ -47,6 +47,11 @@ const NavbarMobileMenu = () => {
       <NavContent>
         <CloseButton onClick={onMenuClickHandler} />
         <NavLinks>
+          <ThemeIconContainer
+            as="li"
+            onClick={onThemeMenuClickHandler}>
+            <ThemeIcon />
+          </ThemeIconContainer>
           <NavLink>
             <a href="#projects">Projects</a>
           </NavLink>
@@ -56,11 +61,6 @@ const NavbarMobileMenu = () => {
           <NavLink>
             <a href="#contact">Contact</a>
           </NavLink>
-          <ThemeIconContainer
-            as="li"
-            onClick={onThemeMenuClickHandler}>
-            <ThemeIcon />
-          </ThemeIconContainer>
           <ResumeLinkContainer as="li">
             <NavResumeLink>
               <a href="/">Resume</a>

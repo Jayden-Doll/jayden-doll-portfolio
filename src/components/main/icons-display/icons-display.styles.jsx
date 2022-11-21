@@ -18,9 +18,13 @@ export const IconContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 1rem;
+  flex-wrap: wrap;
   max-width: 4.8rem;
   transition: 0.2s ease;
+
+  @media (max-width: 768px) {
+    max-width: 6rem;
+  }
 
   svg {
     transition: 0.2s ease;

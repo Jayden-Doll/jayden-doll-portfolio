@@ -8,7 +8,7 @@ export const Wrapper = styled.section`
   width: 100%;
   font-family: "JetBrains Mono";
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   text-align: center;
   padding-top: 9rem;
@@ -22,11 +22,12 @@ export const Wrapper = styled.section`
 export const SectionContent = styled.div`
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
   width: 100%;
   height: 100%;
   padding-top: 3rem;
+  text-align: center;
 `;
 
 export const ContentWrapper = styled.div`
@@ -38,7 +39,6 @@ export const ContentWrapper = styled.div`
   height: auto;
   padding-top: 6rem;
   row-gap: 4rem;
-  column-gap: 4rem;
 `;
 
 export const CtaButtonContainer = styled.div`
@@ -52,6 +52,7 @@ export const CtaButtonContainer = styled.div`
   transition: 0.2s ease;
   user-select: none;
   margin-top: 2rem;
+  margin: 0 auto;
 
   :hover {
     -webkit-box-shadow: 0px 0px 12px 3px var(--color-opaque);

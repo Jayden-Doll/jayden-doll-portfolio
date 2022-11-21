@@ -32,10 +32,10 @@ export const NavWrapper = styled.div`
 `;
 
 export const NavContent = styled.nav`
-  padding: 0 4%;
+  padding: 0 20%;
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   user-select: none;
   padding-top: 1.5rem;
   flex-direction: column;
@@ -45,7 +45,7 @@ export const NavLinks = styled.ul`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   list-style: none;
   font-size: 1rem;
   padding-left: 0;
@@ -148,7 +148,7 @@ export const ThemeIcon = styled(FaPalette)`
 export const CloseButton = styled(BiMenuAltLeft)`
   width: 50px;
   padding: 0.5rem;
-  transform: translateY(-0.5rem);
+  transform: translateY(-0.5rem) translateX(-0.8rem);
   height: auto;
   color: var(--text-primary);
   margin-bottom: 1rem;
