@@ -16,7 +16,10 @@ export const Container = styled.div`
     min-width: 100%;
     row-gap: 3rem;
     column-gap: 3rem;
-    margin-left: 1rem;
+  }
+
+  @media (max-width: 375px) {
+    min-width: 75%;
   }
 `;
 
