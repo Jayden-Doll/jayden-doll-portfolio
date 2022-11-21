@@ -82,6 +82,15 @@ export const CtaButtonLink = styled.p`
     font-size: 1.3rem;
     font-weight: 500;
   }
+
+  @media (max-width: 375px) {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+
+    a {
+      font-size: 1.1rem;
+    }
+  }
 `;
 
 export const SocialIconsContainer = styled.div`
@@ -89,6 +98,18 @@ export const SocialIconsContainer = styled.div`
   width: auto;
   height: auto;
   gap: 1.2rem;
+
+  svg {
+    width: 35px;
+    height: auto;
+  }
+
+  @media (max-width: 375px) {
+    svg {
+      width: 30px;
+      height: auto;
+    }
+  }
 `;
 
 export const SocialLink = styled.a`
@@ -108,24 +129,16 @@ export const ContentDivider = styled.div`
   width: 10%;
   height: 0.1rem;
   background-color: var(--text-primary);
+
+  @media (max-width: 480px) {
+    width: 35%;
+  }
 `;
 
-export const LinkedinIcon = styled(FaLinkedin)`
-  width: 35px;
-  height: auto;
-`;
+export const LinkedinIcon = styled(FaLinkedin)``;
 
-export const GithubIcon = styled(FaGithub)`
-  width: 35px;
-  height: auto;
-`;
+export const GithubIcon = styled(FaGithub)``;
 
-export const TwitterIcon = styled(FaTwitter)`
-  width: 35px;
-  height: auto;
-`;
+export const TwitterIcon = styled(FaTwitter)``;
 
-export const InstagramIcon = styled(FaInstagram)`
-  width: 35px;
-  height: auto;
-`;
+export const InstagramIcon = styled(FaInstagram)``;

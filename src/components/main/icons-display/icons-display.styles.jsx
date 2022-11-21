@@ -11,6 +11,13 @@ export const Container = styled.div`
   column-gap: 5.4rem;
   max-width: 75%;
   padding: 5rem 0;
+
+  @media (max-width: 480px) {
+    min-width: 100%;
+    row-gap: 3rem;
+    column-gap: 3rem;
+    margin-left: 1rem;
+  }
 `;
 
 export const IconContainer = styled.div`
@@ -18,12 +25,13 @@ export const IconContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  flex-wrap: wrap;
+  min-width: 4.8rem;
   max-width: 4.8rem;
   transition: 0.2s ease;
-
+  text-align: center;
+  gap: 1rem;
   @media (max-width: 768px) {
-    max-width: 6rem;
+    min-width: 4.8rem;
   }
 
   svg {
@@ -37,7 +45,6 @@ export const IconContainer = styled.div`
     }
 
     p {
-      will-change: font-weight;
       color: var(--text-primary);
       cursor: default;
     }
@@ -52,4 +59,8 @@ export const IconName = styled.p`
   transition: 0.2s ease;
   text-align: center;
   padding: 0.1rem;
+
+  @media (max-width: 480px) {
+    font-size: 0.9rem;
+  }
 `;

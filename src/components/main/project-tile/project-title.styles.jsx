@@ -88,6 +88,7 @@ export const ProjectTitle = styled.header`
 
   @media (max-width: 768px) {
     padding: 1.5rem 0;
+    transform: none;
   }
 `;
 
