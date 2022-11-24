@@ -36,25 +36,29 @@ const ContactSection = () => {
             <SocialLink
               rel="noreferrer"
               href="https://www.linkedin.com/in/jayden-doll/"
-              target="_blank">
+              target="_blank"
+              aria-label="Linkedin">
               <LinkedinIcon />
             </SocialLink>
             <SocialLink
               rel="noreferrer"
               href="https://github.com/Jayden-Doll"
-              target="_blank">
+              target="_blank"
+              aria-label="Github">
               <GithubIcon />
             </SocialLink>
             <SocialLink
               rel="noreferrer"
               href="https://twitter.com/Jayden_Doll"
-              target="_blank">
+              target="_blank"
+              aria-label="Twitter">
               <TwitterIcon />
             </SocialLink>
             <SocialLink
               rel="noreferrer"
               href="https://www.instagram.com/jaydoll_codes/"
-              target="_blank">
+              target="_blank"
+              aria-label="Instagram">
               <InstagramIcon />
             </SocialLink>
           </SocialIconsContainer>

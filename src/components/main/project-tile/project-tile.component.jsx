@@ -20,6 +20,7 @@ const ProjectTile = ({
   desc,
   desc2,
   tags,
+  altText,
   codeLink,
   liveLink,
 }) => {
@@ -30,7 +31,10 @@ const ProjectTile = ({
           <ProjectDecoration>
             <ProjectDecorationContent />
           </ProjectDecoration>
-          <ProjectImage src={imgSrc} />
+          <ProjectImage
+            alt={altText}
+            src={imgSrc}
+          />
         </ImageContainer>
         <ProjectTitle>{title}</ProjectTitle>
         <ProjectTag>{tags}</ProjectTag>
@@ -39,12 +43,14 @@ const ProjectTile = ({
         <ProjectLinkContainer>
           <ProjectLink
             href={codeLink}
-            target="_blank">
+            target="_blank"
+            aria-label="Project Code">
             <GithubIcon />
           </ProjectLink>
           <ProjectLink
             href={liveLink}
-            target="_blank">
+            target="_blank"
+            aria-label="Live Site">
             <LiveLinkIcon />
           </ProjectLink>
         </ProjectLinkContainer>

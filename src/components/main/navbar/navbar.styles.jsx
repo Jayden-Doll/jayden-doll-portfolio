@@ -97,9 +97,11 @@ export const ResumeLinkContainer = styled.div`
   }
 `;
 
-export const NavResumeLink = styled.li`
+export const NavResumeLink = styled.p`
+  margin: 0;
+  padding: 0;
   background: #181818;
-  padding: 0.3rem 0.15rem;
+  padding: 0.35rem 0rem;
   border-radius: 0.15rem;
 
   :hover {
@@ -107,7 +109,7 @@ export const NavResumeLink = styled.li`
   }
 
   a {
-    padding: 0.3rem 0.5rem;
+    padding: 0.35rem 0.5rem;
     text-decoration: none;
     background: var(--text-gradient);
     -webkit-background-clip: text;
