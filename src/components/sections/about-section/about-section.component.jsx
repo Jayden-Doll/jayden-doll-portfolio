@@ -1,6 +1,6 @@
 import Title from "../../main/title/title.component";
 
-import aboutPicture from "../../../images/about-pic.jpg";
+import aboutPicture from "../../../images/about-pic.webp";
 
 import {
   Wrapper,
