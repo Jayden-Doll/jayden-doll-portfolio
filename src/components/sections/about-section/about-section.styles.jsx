@@ -87,7 +87,7 @@ export const ProjectImage = styled.img`
   border: 2px solid var(--text-secondary);
 `;
 
-export const TextContainer = styled(motion.div)`
+export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -98,7 +98,7 @@ export const TextContainer = styled(motion.div)`
   }
 `;
 
-export const AboutText = styled.p`
+export const AboutText = styled(motion.div)`
   color: var(--text-primary);
   font-size: 1rem;
   font-weight: 500;

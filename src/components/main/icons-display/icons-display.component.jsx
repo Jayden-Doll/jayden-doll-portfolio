@@ -23,7 +23,7 @@ const IconsDisplay = () => {
       </IconContainer>
       <IconContainer
         initial={{ opacity: 0 }}
-        transition={{ delay: 0.1, duration: 0.3 }}
+        transition={{ delay: 0, duration: 0.3 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}>
         <CSSIcon />
@@ -31,7 +31,7 @@ const IconsDisplay = () => {
       </IconContainer>
       <IconContainer
         initial={{ opacity: 0 }}
-        transition={{ delay: 0.2, duration: 0.3 }}
+        transition={{ delay: 0.1, duration: 0.3 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}>
         <JSIcon />
@@ -39,7 +39,7 @@ const IconsDisplay = () => {
       </IconContainer>
       <IconContainer
         initial={{ opacity: 0 }}
-        transition={{ delay: 0.3, duration: 0.3 }}
+        transition={{ delay: 0.1, duration: 0.3 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}>
         <ReactIcon />
@@ -47,7 +47,7 @@ const IconsDisplay = () => {
       </IconContainer>
       <IconContainer
         initial={{ opacity: 0 }}
-        transition={{ delay: 0.4, duration: 0.3 }}
+        transition={{ delay: 0.2, duration: 0.3 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}>
         <NodeIcon />
@@ -55,7 +55,7 @@ const IconsDisplay = () => {
       </IconContainer>
       <IconContainer
         initial={{ opacity: 0 }}
-        transition={{ delay: 0.5, duration: 0.3 }}
+        transition={{ delay: 0.2, duration: 0.3 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}>
         <GitIcon />
@@ -63,7 +63,7 @@ const IconsDisplay = () => {
       </IconContainer>
       <IconContainer
         initial={{ opacity: 0 }}
-        transition={{ delay: 0.6, duration: 0.3 }}
+        transition={{ delay: 0.3, duration: 0.3 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}>
         <SassIcon />
@@ -71,7 +71,7 @@ const IconsDisplay = () => {
       </IconContainer>
       <IconContainer
         initial={{ opacity: 0 }}
-        transition={{ delay: 0.7, duration: 0.3 }}
+        transition={{ delay: 0.3, duration: 0.3 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}>
         <StyledIcon />
@@ -79,7 +79,7 @@ const IconsDisplay = () => {
       </IconContainer>
       <IconContainer
         initial={{ opacity: 0 }}
-        transition={{ delay: 0.8, duration: 0.3 }}
+        transition={{ delay: 0.3, duration: 0.3 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}>
         <FigmaIcon />
