@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const Container = styled.div`
   display: flex;
@@ -23,7 +24,7 @@ export const Container = styled.div`
   }
 `;
 
-export const IconContainer = styled.div`
+export const IconContainer = styled(motion.div)`
   display: flex;
   justify-content: center;
   align-items: center;

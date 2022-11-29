@@ -4,7 +4,13 @@ const FooterSection = () => {
   return (
     <Wrapper>
       <SectionContent>
-        <FooterText>Created by Jayden Doll</FooterText>
+        <FooterText
+          initial={{ opacity: 0 }}
+          transition={{ delay: 0, duration: 0.3 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}>
+          Created by Jayden Doll
+        </FooterText>
       </SectionContent>
     </Wrapper>
   );

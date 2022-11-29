@@ -20,7 +20,11 @@ const AboutSection = () => {
       <SectionContent id="about">
         <Title text="About Me" />
         <ContentWrapper>
-          <ImageContainer>
+          <ImageContainer
+            initial={{ opacity: 0 }}
+            transition={{ delay: 0, duration: 0.5 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}>
             <ProjectDecoration>
               <ProjectDecorationContent />
             </ProjectDecoration>
@@ -29,7 +33,11 @@ const AboutSection = () => {
               src={aboutPicture}
             />
           </ImageContainer>
-          <TextContainer>
+          <TextContainer
+            initial={{ opacity: 0 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}>
             <AboutText>
               Hello, my name is Jayden Doll and I enjoy creating on the
               front-end side of the internet. Though I've been fully invested in

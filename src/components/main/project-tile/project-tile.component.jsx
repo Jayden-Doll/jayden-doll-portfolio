@@ -27,7 +27,11 @@ const ProjectTile = ({
   return (
     <ProjectContainer>
       <ProjectContent>
-        <ImageContainer>
+        <ImageContainer
+          initial={{ opacity: 0 }}
+          transition={{ delay: 0, duration: 0.5 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}>
           <ProjectDecoration>
             <ProjectDecorationContent />
           </ProjectDecoration>
@@ -36,18 +40,52 @@ const ProjectTile = ({
             src={imgSrc}
           />
         </ImageContainer>
-        <ProjectTitle>{title}</ProjectTitle>
-        <ProjectTag>{tags}</ProjectTag>
-        <ProjectDescription>{desc}</ProjectDescription>
-        {desc2 && <ProjectDescription>{desc2}</ProjectDescription>}
+        <ProjectTitle
+          initial={{ opacity: 0 }}
+          transition={{ delay: 0.1, duration: 0.3 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}>
+          {title}
+        </ProjectTitle>
+        <ProjectTag
+          initial={{ opacity: 0 }}
+          transition={{ delay: 0.2, duration: 0.3 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}>
+          {tags}
+        </ProjectTag>
+        <ProjectDescription
+          initial={{ opacity: 0 }}
+          transition={{ delay: 0.3, duration: 0.3 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}>
+          {desc}
+        </ProjectDescription>
+        {desc2 && (
+          <ProjectDescription
+            initial={{ opacity: 0 }}
+            transition={{ delay: 0.3, duration: 0.3 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}>
+            {desc2}
+          </ProjectDescription>
+        )}
         <ProjectLinkContainer>
           <ProjectLink
+            initial={{ opacity: 0 }}
+            transition={{ delay: 0.4, duration: 0.3 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
             href={codeLink}
             target="_blank"
             aria-label="Project Code">
             <GithubIcon />
           </ProjectLink>
           <ProjectLink
+            initial={{ opacity: 0 }}
+            transition={{ delay: 0.5, duration: 0.3 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
             href={liveLink}
             target="_blank"
             aria-label="Live Site">

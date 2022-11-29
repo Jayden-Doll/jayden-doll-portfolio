@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 import { MdClose } from "react-icons/md";
 import { BiMenuAltLeft } from "react-icons/bi";
@@ -53,7 +54,7 @@ export const NavLinks = styled.ul`
   gap: 3rem;
 `;
 
-export const NavLink = styled.li`
+export const NavLink = styled(motion.li)`
   /* padding-top: 0.5rem;
   padding-bottom: 0.5rem; */
   box-sizing: border-box;
@@ -70,7 +71,7 @@ export const NavLink = styled.li`
   }
 `;
 
-export const ResumeLinkContainer = styled.div`
+export const ResumeLinkContainer = styled(motion.div)`
   width: auto;
   height: auto;
   background: var(--text-gradient);
@@ -107,20 +108,7 @@ export const NavResumeLink = styled.li`
   }
 `;
 
-export const NavLogo = styled.p`
-  a {
-    text-decoration: none;
-    color: var(--text-primary);
-    font-size: 1.5rem;
-    font-weight: 500;
-
-    :hover {
-      cursor: pointer;
-    }
-  }
-`;
-
-export const ThemeIconContainer = styled.div`
+export const ThemeIconContainer = styled(motion.div)`
   display: flex;
 
   width: auto;

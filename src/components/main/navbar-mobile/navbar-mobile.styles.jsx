@@ -1,8 +1,9 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 import { BiMenuAltRight } from "react-icons/bi";
 
-export const NavWrapper = styled.div`
+export const NavWrapper = styled(motion.div)`
   position: fixed;
   top: 0;
   background-color: #181818;

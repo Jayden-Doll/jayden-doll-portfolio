@@ -48,20 +48,39 @@ const NavbarMobileMenu = () => {
         <CloseButton onClick={onMenuClickHandler} />
         <NavLinks>
           <ThemeIconContainer
-            as="li"
+            initial={{ opacity: 0 }}
+            transition={{ delay: 0, duration: 0.3 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
             onClick={onThemeMenuClickHandler}>
             <ThemeIcon />
           </ThemeIconContainer>
-          <NavLink>
+          <NavLink
+            initial={{ opacity: 0 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}>
             <a href="#projects">Projects</a>
           </NavLink>
-          <NavLink>
+          <NavLink
+            initial={{ opacity: 0 }}
+            transition={{ delay: 0.2, duration: 0.3 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}>
             <a href="#about">About</a>
           </NavLink>
-          <NavLink>
+          <NavLink
+            initial={{ opacity: 0 }}
+            transition={{ delay: 0.3, duration: 0.3 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}>
             <a href="#contact">Contact</a>
           </NavLink>
-          <ResumeLinkContainer as="li">
+          <ResumeLinkContainer
+            initial={{ opacity: 0 }}
+            transition={{ delay: 0.4, duration: 0.3 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}>
             <NavResumeLink>
               <a href="/">Resume</a>
             </NavResumeLink>

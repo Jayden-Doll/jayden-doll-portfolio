@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const Wrapper = styled.section`
   display: flex;
@@ -44,10 +45,11 @@ export const ContentWrapper = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
+    padding-left: 3%;
   }
 `;
 
-export const ImageContainer = styled.div`
+export const ImageContainer = styled(motion.div)`
   max-width: 25%;
   height: 50%;
   position: relative;
@@ -85,7 +87,7 @@ export const ProjectImage = styled.img`
   border: 2px solid var(--text-secondary);
 `;
 
-export const TextContainer = styled.div`
+export const TextContainer = styled(motion.div)`
   display: flex;
   flex-direction: column;
   gap: 1.5rem;

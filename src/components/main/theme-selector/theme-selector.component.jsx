@@ -51,13 +51,39 @@ const ThemeSelector = () => {
   return (
     <Wrapper>
       <ThemeContent>
-        <ThemeTitle>Theme Select</ThemeTitle>
+        <ThemeTitle
+          initial={{ opacity: 0 }}
+          transition={{ delay: 0, duration: 0.3 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}>
+          Theme Select
+        </ThemeTitle>
         <ThemeOptionsContainer>
           <CloseButton onClick={onClickHandler} />
-          <ThemeOptionBlue onClick={blueHandler}></ThemeOptionBlue>
-          <ThemeOptionOrange onClick={orangeHandler}></ThemeOptionOrange>
-          <ThemeOptionPurple onClick={purpleHandler}></ThemeOptionPurple>
-          <ThemeOptionGreen onClick={greenHandler}></ThemeOptionGreen>
+          <ThemeOptionBlue
+            initial={{ opacity: 0 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            onClick={blueHandler}></ThemeOptionBlue>
+          <ThemeOptionOrange
+            initial={{ opacity: 0 }}
+            transition={{ delay: 0.2, duration: 0.3 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            onClick={orangeHandler}></ThemeOptionOrange>
+          <ThemeOptionPurple
+            initial={{ opacity: 0 }}
+            transition={{ delay: 0.3, duration: 0.3 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            onClick={purpleHandler}></ThemeOptionPurple>
+          <ThemeOptionGreen
+            initial={{ opacity: 0 }}
+            transition={{ delay: 0.4, duration: 0.3 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            onClick={greenHandler}></ThemeOptionGreen>
         </ThemeOptionsContainer>
       </ThemeContent>
     </Wrapper>

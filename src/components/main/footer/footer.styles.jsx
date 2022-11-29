@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const Wrapper = styled.section`
   display: flex;
@@ -28,7 +29,7 @@ export const SectionContent = styled.div`
   padding-top: 3rem;
 `;
 
-export const FooterText = styled.p`
+export const FooterText = styled(motion.p)`
   color: var(--text-secondary);
   font-weight: 500;
   font-family: "Fira Code";

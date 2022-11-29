@@ -21,7 +21,11 @@ const ContactSection = () => {
       <SectionContent id="contact">
         <ContentWrapper>
           <Title text="Let's Connect!" />
-          <CtaButtonContainer>
+          <CtaButtonContainer
+            initial={{ opacity: 0 }}
+            transition={{ delay: 0, duration: 0.3 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}>
             <CtaButtonLink>
               <a
                 href="mailto:jayjdoll002@gmail.com"
@@ -31,9 +35,18 @@ const ContactSection = () => {
               </a>
             </CtaButtonLink>
           </CtaButtonContainer>
-          <ContentDivider />
+          <ContentDivider
+            initial={{ opacity: 0 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+          />
           <SocialIconsContainer>
             <SocialLink
+              initial={{ opacity: 0 }}
+              transition={{ delay: 0.2, duration: 0.3 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
               rel="noreferrer"
               href="https://www.linkedin.com/in/jayden-doll/"
               target="_blank"
@@ -41,6 +54,10 @@ const ContactSection = () => {
               <LinkedinIcon />
             </SocialLink>
             <SocialLink
+              initial={{ opacity: 0 }}
+              transition={{ delay: 0.3, duration: 0.3 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
               rel="noreferrer"
               href="https://github.com/Jayden-Doll"
               target="_blank"
@@ -48,6 +65,10 @@ const ContactSection = () => {
               <GithubIcon />
             </SocialLink>
             <SocialLink
+              initial={{ opacity: 0 }}
+              transition={{ delay: 0.4, duration: 0.3 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
               rel="noreferrer"
               href="https://twitter.com/Jayden_Doll"
               target="_blank"
@@ -55,6 +76,10 @@ const ContactSection = () => {
               <TwitterIcon />
             </SocialLink>
             <SocialLink
+              initial={{ opacity: 0 }}
+              transition={{ delay: 0.5, duration: 0.3 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
               rel="noreferrer"
               href="https://www.instagram.com/jaydoll_codes/"
               target="_blank"

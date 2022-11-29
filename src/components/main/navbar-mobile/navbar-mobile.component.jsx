@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import { motion } from "framer-motion";
 import GlobalContext from "../../../context/GlobalContext";
 
 import {
@@ -20,7 +21,10 @@ const NavbarMobile = () => {
   };
 
   return (
-    <NavWrapper>
+    <NavWrapper
+      initial={{ opacity: 0 }}
+      transition={{ delay: 0.2, duration: 0.3 }}
+      animate={{ opacity: 1 }}>
       <NavbarMobileMenu show={isMobileMenuOpen} />
       <NavContent>
         <NavLogo>

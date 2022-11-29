@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 export const Wrapper = styled.section`
   display: flex;
@@ -41,7 +42,7 @@ export const ContentWrapper = styled.div`
   row-gap: 4rem;
 `;
 
-export const CtaButtonContainer = styled.div`
+export const CtaButtonContainer = styled(motion.div)`
   font-family: "Fira Code";
   width: auto;
   height: auto;
@@ -112,7 +113,7 @@ export const SocialIconsContainer = styled.div`
   }
 `;
 
-export const SocialLink = styled.a`
+export const SocialLink = styled(motion.a)`
   color: var(--text-secondary);
   transition: 0.2s ease;
   padding: 0.5rem;
@@ -125,7 +126,7 @@ export const SocialLink = styled.a`
   }
 `;
 
-export const ContentDivider = styled.div`
+export const ContentDivider = styled(motion.div)`
   width: 10%;
   height: 0.1rem;
   background-color: var(--text-primary);

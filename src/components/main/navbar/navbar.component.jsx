@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 import ThemeSelector from "../theme-selector/theme-selector.component";
 
@@ -31,22 +32,43 @@ const Navbar = () => {
       {isThemeMenuOpen && <ThemeSelector />}
       <NavContent>
         <NavLogo>
-          <a href="/">JD</a>
+          <motion.a
+            initial={{ opacity: 0, x: -100 }}
+            transition={{ delay: 0.2, duration: 0.3 }}
+            animate={{ opacity: 1 }}
+            href="/">
+            JD
+          </motion.a>
         </NavLogo>
         <NavLinks>
-          <ThemeIconContainer as="li">
+          <ThemeIconContainer
+            initial={{ opacity: 0 }}
+            transition={{ delay: 0.3, duration: 0.3 }}
+            animate={{ opacity: 1 }}>
             <ThemeIcon onClick={onclickHandler} />
           </ThemeIconContainer>
-          <NavLink>
+          <NavLink
+            initial={{ opacity: 0 }}
+            transition={{ delay: 0.4, duration: 0.3 }}
+            animate={{ opacity: 1 }}>
             <a href="#projects">Projects</a>
           </NavLink>
-          <NavLink>
+          <NavLink
+            initial={{ opacity: 0 }}
+            transition={{ delay: 0.5, duration: 0.3 }}
+            animate={{ opacity: 1 }}>
             <a href="#about">About</a>
           </NavLink>
-          <NavLink>
+          <NavLink
+            initial={{ opacity: 0 }}
+            transition={{ delay: 0.6, duration: 0.3 }}
+            animate={{ opacity: 1 }}>
             <a href="#contact">Contact</a>
           </NavLink>
-          <ResumeLinkContainer as="li">
+          <ResumeLinkContainer
+            initial={{ opacity: 0 }}
+            transition={{ delay: 0.7, duration: 0.3 }}
+            animate={{ opacity: 1 }}>
             <NavResumeLink>
               <a href="/">Resume</a>
             </NavResumeLink>

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 import { FaPalette } from "react-icons/fa";
 
@@ -35,7 +36,7 @@ export const NavLinks = styled.ul`
   gap: 3rem;
 `;
 
-export const NavLink = styled.li`
+export const NavLink = styled(motion.li)`
   /* padding-top: 0.5rem;
   padding-bottom: 0.5rem; */
   box-sizing: border-box;
@@ -79,7 +80,7 @@ export const NavLink = styled.li`
   }
 `;
 
-export const ResumeLinkContainer = styled.div`
+export const ResumeLinkContainer = styled(motion.div)`
   width: auto;
   height: auto;
   background: var(--text-gradient);
@@ -97,7 +98,7 @@ export const ResumeLinkContainer = styled.div`
   }
 `;
 
-export const NavResumeLink = styled.p`
+export const NavResumeLink = styled(motion.p)`
   margin: 0;
   padding: 0;
   background: #181818;
@@ -118,7 +119,7 @@ export const NavResumeLink = styled.p`
   }
 `;
 
-export const NavLogo = styled.p`
+export const NavLogo = styled(motion.p)`
   a {
     text-decoration: none;
     color: var(--text-primary);
@@ -131,7 +132,7 @@ export const NavLogo = styled.p`
   }
 `;
 
-export const ThemeIconContainer = styled.div`
+export const ThemeIconContainer = styled(motion.div)`
   display: flex;
 
   width: auto;

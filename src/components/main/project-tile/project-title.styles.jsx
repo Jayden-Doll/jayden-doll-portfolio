@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 export const ProjectContainer = styled.div`
   display: flex;
@@ -34,7 +35,7 @@ export const ProjectContent = styled.div`
   }
 `;
 
-export const ImageContainer = styled.div`
+export const ImageContainer = styled(motion.div)`
   width: 100%;
   height: 50%;
   position: relative;
@@ -68,7 +69,7 @@ export const ProjectImage = styled.img`
   border: 2px solid var(--text-secondary);
 `;
 
-export const ProjectTitle = styled.header`
+export const ProjectTitle = styled(motion.header)`
   padding: 1.5rem 0.3rem;
   font-size: var(--fontsize-title-project);
   background: var(--text-gradient);
@@ -92,7 +93,7 @@ export const ProjectTitle = styled.header`
   }
 `;
 
-export const ProjectDescription = styled.p`
+export const ProjectDescription = styled(motion.p)`
   color: var(--text-primary);
   font-size: 1rem;
   font-family: "Fira Code";
@@ -102,7 +103,7 @@ export const ProjectDescription = styled.p`
   line-height: 1.4rem;
 `;
 
-export const ProjectTag = styled.span`
+export const ProjectTag = styled(motion.span)`
   color: var(--text-secondary);
   font-size: 0.85rem;
   font-family: "Fira Code";
@@ -122,7 +123,7 @@ export const ProjectLinkContainer = styled.div`
   transform: translateX(-0.5rem);
 `;
 
-export const ProjectLink = styled.a`
+export const ProjectLink = styled(motion.a)`
   color: var(--text-secondary);
   transition: 0.2s ease;
   padding: 0.5rem;

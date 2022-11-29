@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const Wrapper = styled.section`
   display: flex;
@@ -27,7 +28,7 @@ export const HeroContent = styled.div`
   gap: 0.8rem;
 `;
 
-export const Title = styled.h1`
+export const Title = styled(motion.h1)`
   font-size: var(--fontsize-title-hero);
   background: var(--text-gradient);
   -webkit-background-clip: text;
@@ -41,7 +42,7 @@ export const Title = styled.h1`
   }
 `;
 
-export const Subtitle = styled.h2`
+export const Subtitle = styled(motion.h2)`
   color: var(--text-primary);
   text-align: left;
   font-weight: 700;
@@ -53,7 +54,7 @@ export const Subtitle = styled.h2`
   }
 `;
 
-export const Description = styled.p`
+export const Description = styled(motion.p)`
   text-align: left;
   color: var(--text-secondary);
   font-size: var(--fontsize-description-hero);
@@ -72,7 +73,7 @@ export const Description = styled.p`
   }
 `;
 
-export const CtaButtonContainer = styled.div`
+export const CtaButtonContainer = styled(motion.div)`
   font-family: "Fira Code";
   width: auto;
   height: auto;
