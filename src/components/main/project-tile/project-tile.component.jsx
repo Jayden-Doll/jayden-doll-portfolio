@@ -83,7 +83,7 @@ const ProjectTile = ({
           </ProjectLink>
           <ProjectLink
             initial={{ opacity: 0 }}
-            transition={{ delay: 0.5, duration: 0.3 }}
+            transition={{ delay: 0.45, duration: 0.3 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             href={liveLink}

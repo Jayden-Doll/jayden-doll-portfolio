@@ -24,6 +24,7 @@ export const Wrapper = styled.div`
     width: 100%;
     border-left: 0rem solid var(--text-primary);
     border-bottom: 0;
+    padding-left: 4%;
   }
 
   @keyframes open-menu {

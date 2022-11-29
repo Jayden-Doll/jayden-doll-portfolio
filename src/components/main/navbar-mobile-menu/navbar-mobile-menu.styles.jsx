@@ -113,7 +113,7 @@ export const ThemeIconContainer = styled(motion.div)`
 
   width: auto;
   height: auto;
-  transform: translateX(0.5rem);
+  transform: translateX(10%);
 `;
 
 export const ThemeIcon = styled(FaPalette)`
@@ -136,7 +136,7 @@ export const ThemeIcon = styled(FaPalette)`
 export const CloseButton = styled(BiMenuAltLeft)`
   width: 50px;
   padding: 0.5rem;
-  transform: translateY(-0.5rem) translateX(-0.8rem);
+  transform: translateY(10%) translateX(-0.8rem);
   height: auto;
   color: var(--text-primary);
   margin-bottom: 1rem;
