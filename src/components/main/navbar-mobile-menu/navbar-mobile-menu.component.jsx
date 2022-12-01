@@ -84,7 +84,8 @@ const NavbarMobileMenu = () => {
             <NavResumeLink>
               <a
                 href="https://drive.google.com/file/d/1uTvY_r14mFieR0HN7Vrk4Y4YhtbAH4UE/view"
-                rel="noopener noreferrer">
+                rel="noopener noreferrer"
+                target="_blank">
                 Resume
               </a>
             </NavResumeLink>
