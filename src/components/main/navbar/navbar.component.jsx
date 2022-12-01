@@ -70,7 +70,12 @@ const Navbar = () => {
             transition={{ delay: 0.7, duration: 0.3 }}
             animate={{ opacity: 1 }}>
             <NavResumeLink>
-              <a href="/">Resume</a>
+              <a
+                href="https://drive.google.com/file/d/1uTvY_r14mFieR0HN7Vrk4Y4YhtbAH4UE/view"
+                rel="noopener noreferrer"
+                target="_blank">
+                Resume
+              </a>
             </NavResumeLink>
           </ResumeLinkContainer>
         </NavLinks>
