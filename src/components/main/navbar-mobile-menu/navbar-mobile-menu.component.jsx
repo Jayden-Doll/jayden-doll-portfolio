@@ -82,7 +82,11 @@ const NavbarMobileMenu = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}>
             <NavResumeLink>
-              <a href="/">Resume</a>
+              <a
+                href="https://drive.google.com/file/d/1uTvY_r14mFieR0HN7Vrk4Y4YhtbAH4UE/view"
+                rel="noopener noreferrer">
+                Resume
+              </a>
             </NavResumeLink>
           </ResumeLinkContainer>
         </NavLinks>
