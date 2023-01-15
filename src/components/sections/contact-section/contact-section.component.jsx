@@ -20,7 +20,10 @@ const ContactSection = () => {
     <Wrapper>
       <SectionContent id="contact">
         <ContentWrapper>
-          <Title text="Let's Connect!" />
+          <Title
+            element="h6"
+            text="Let's Connect!"
+          />
           <CtaButtonContainer
             initial={{ opacity: 0 }}
             transition={{ delay: 0, duration: 0.3 }}

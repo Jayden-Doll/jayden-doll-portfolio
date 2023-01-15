@@ -1,13 +1,13 @@
 import { TitleContainer, TitleUnderline, TitleText } from "./title.styles";
 
-const Title = ({ text }) => {
+const Title = ({ text, element }) => {
   return (
     <TitleContainer
       initial={{ opacity: 0 }}
       transition={{ delay: 0, duration: 0.5 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}>
-      <TitleText>{text}</TitleText>
+      <TitleText as={element}>{text}</TitleText>
       <TitleUnderline />
     </TitleContainer>
   );

@@ -7,7 +7,10 @@ const SkillsSection = () => {
   return (
     <Wrapper>
       <SkillsContent>
-        <Title text="My Skills" />
+        <Title
+          element="h3"
+          text="My Skills"
+        />
         <IconsDisplay />
       </SkillsContent>
     </Wrapper>

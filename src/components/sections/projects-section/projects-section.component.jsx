@@ -16,7 +16,10 @@ const ProjectsSection = () => {
   return (
     <Wrapper>
       <SectionContent id="projects">
-        <Title text="Projects" />
+        <Title
+          element="h4"
+          text="Projects"
+        />
         <ProjectsWrapper>
           <ProjectTile
             imgSrc={gsmini}

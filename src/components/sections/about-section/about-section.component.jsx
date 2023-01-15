@@ -18,7 +18,10 @@ const AboutSection = () => {
   return (
     <Wrapper>
       <SectionContent id="about">
-        <Title text="About Me" />
+        <Title
+          element="h5"
+          text="About Me"
+        />
         <ContentWrapper>
           <ImageContainer
             initial={{ opacity: 0 }}
