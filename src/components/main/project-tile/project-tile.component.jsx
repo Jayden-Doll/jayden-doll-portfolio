@@ -79,7 +79,10 @@ const ProjectTile = ({
             href={codeLink}
             target="_blank"
             aria-label="Project Code">
-            <GithubIcon />
+            <GithubIcon
+              aria-label="Github Icon"
+              title="Github Link"
+            />
           </ProjectLink>
           <ProjectLink
             initial={{ opacity: 0 }}
@@ -89,7 +92,10 @@ const ProjectTile = ({
             href={liveLink}
             target="_blank"
             aria-label="Live Site">
-            <LiveLinkIcon />
+            <LiveLinkIcon
+              aria-label="Live Project Site Icon"
+              title="Live Project Link"
+            />
           </ProjectLink>
         </ProjectLinkContainer>
       </ProjectContent>

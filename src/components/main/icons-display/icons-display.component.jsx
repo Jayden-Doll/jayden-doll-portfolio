@@ -18,7 +18,7 @@ const IconsDisplay = () => {
         transition={{ delay: 0, duration: 0.3 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}>
-        <HTMLIcon />
+        <HTMLIcon aria-label="HTML Icon" />
         <IconName>HTML</IconName>
       </IconContainer>
       <IconContainer
@@ -26,7 +26,7 @@ const IconsDisplay = () => {
         transition={{ delay: 0, duration: 0.3 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}>
-        <CSSIcon />
+        <CSSIcon aria-label="CSS Icon" />
         <IconName>CSS</IconName>
       </IconContainer>
       <IconContainer
@@ -34,7 +34,7 @@ const IconsDisplay = () => {
         transition={{ delay: 0.1, duration: 0.3 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}>
-        <JSIcon />
+        <JSIcon aria-label="Javascript Icon" />
         <IconName>JavaScript</IconName>
       </IconContainer>
       <IconContainer
@@ -42,7 +42,7 @@ const IconsDisplay = () => {
         transition={{ delay: 0.1, duration: 0.3 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}>
-        <ReactIcon />
+        <ReactIcon aria-label="ReactJS Icon" />
         <IconName>ReactJS</IconName>
       </IconContainer>
       <IconContainer
@@ -50,7 +50,7 @@ const IconsDisplay = () => {
         transition={{ delay: 0.2, duration: 0.3 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}>
-        <NodeIcon />
+        <NodeIcon aria-label="NodeJS Icon" />
         <IconName>NodeJS</IconName>
       </IconContainer>
       <IconContainer
@@ -58,7 +58,7 @@ const IconsDisplay = () => {
         transition={{ delay: 0.2, duration: 0.3 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}>
-        <GitIcon />
+        <GitIcon aria-label="Git Icon" />
         <IconName>Git</IconName>
       </IconContainer>
       <IconContainer
@@ -66,7 +66,7 @@ const IconsDisplay = () => {
         transition={{ delay: 0.3, duration: 0.3 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}>
-        <SassIcon />
+        <SassIcon aria-label="Sass Icon" />
         <IconName>Sass</IconName>
       </IconContainer>
       <IconContainer
@@ -74,7 +74,7 @@ const IconsDisplay = () => {
         transition={{ delay: 0.3, duration: 0.3 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}>
-        <StyledIcon />
+        <StyledIcon aria-label="Styled Components Icon" />
         <IconName>Styled Components</IconName>
       </IconContainer>
       <IconContainer
@@ -82,7 +82,7 @@ const IconsDisplay = () => {
         transition={{ delay: 0.3, duration: 0.3 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}>
-        <FigmaIcon />
+        <FigmaIcon aria-label="Figma Icon" />
         <IconName>Figma</IconName>
       </IconContainer>
     </Container>

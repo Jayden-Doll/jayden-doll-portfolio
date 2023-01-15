@@ -33,7 +33,8 @@ const ContactSection = () => {
               <a
                 href="mailto:jayjdoll002@gmail.com"
                 target="_blank"
-                rel="noreferrer">
+                rel="noreferrer"
+                aria-label="Jayden Doll Email Link">
                 Email Me
               </a>
             </CtaButtonLink>
@@ -53,8 +54,9 @@ const ContactSection = () => {
               rel="noreferrer"
               href="https://www.linkedin.com/in/jayden-doll/"
               target="_blank"
-              aria-label="Linkedin">
-              <LinkedinIcon />
+              aria-label="Linkedin"
+              title="Linkedin">
+              <LinkedinIcon aria-label="Linkedin Icon" />
             </SocialLink>
             <SocialLink
               initial={{ opacity: 0 }}
@@ -64,8 +66,9 @@ const ContactSection = () => {
               rel="noreferrer"
               href="https://github.com/Jayden-Doll"
               target="_blank"
-              aria-label="Github">
-              <GithubIcon />
+              aria-label="Github"
+              title="Github">
+              <GithubIcon aria-label="Github Icon" />
             </SocialLink>
             <SocialLink
               initial={{ opacity: 0 }}
@@ -75,8 +78,9 @@ const ContactSection = () => {
               rel="noreferrer"
               href="https://twitter.com/Jayden_Doll"
               target="_blank"
-              aria-label="Twitter">
-              <TwitterIcon />
+              aria-label="Twitter"
+              title="Twitter">
+              <TwitterIcon aria-label="Github Icon" />
             </SocialLink>
             <SocialLink
               initial={{ opacity: 0 }}
@@ -86,8 +90,9 @@ const ContactSection = () => {
               rel="noreferrer"
               href="https://www.instagram.com/jaydoll_codes/"
               target="_blank"
-              aria-label="Instagram">
-              <InstagramIcon />
+              aria-label="Instagram"
+              title="Instagram">
+              <InstagramIcon aria-label="Instagram Icon" />
             </SocialLink>
           </SocialIconsContainer>
         </ContentWrapper>

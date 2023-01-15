@@ -36,7 +36,9 @@ const Navbar = () => {
             initial={{ opacity: 0, x: -100 }}
             transition={{ delay: 0.2, duration: 0.3 }}
             animate={{ opacity: 1 }}
-            href="/">
+            href="/"
+            title="To Homepage"
+            aria-label="Jayden Doll Homepage Logo">
             JD
           </motion.a>
         </NavLogo>
@@ -45,25 +47,40 @@ const Navbar = () => {
             initial={{ opacity: 0 }}
             transition={{ delay: 0.3, duration: 0.3 }}
             animate={{ opacity: 1 }}>
-            <ThemeIcon onClick={onclickHandler} />
+            <ThemeIcon
+              title="Theme Select"
+              onClick={onclickHandler}
+            />
           </ThemeIconContainer>
           <NavLink
             initial={{ opacity: 0 }}
             transition={{ delay: 0.4, duration: 0.3 }}
             animate={{ opacity: 1 }}>
-            <a href="#projects">Projects</a>
+            <a
+              aria-label="Jump To Jayden's Projects"
+              href="#projects">
+              Projects
+            </a>
           </NavLink>
           <NavLink
             initial={{ opacity: 0 }}
             transition={{ delay: 0.5, duration: 0.3 }}
             animate={{ opacity: 1 }}>
-            <a href="#about">About</a>
+            <a
+              aria-label="Jump To Jayden's About Section"
+              href="#about">
+              About
+            </a>
           </NavLink>
           <NavLink
             initial={{ opacity: 0 }}
             transition={{ delay: 0.6, duration: 0.3 }}
             animate={{ opacity: 1 }}>
-            <a href="#contact">Contact</a>
+            <a
+              aria-label="Jump To Jayden's Contact Information"
+              href="#contact">
+              Contact
+            </a>
           </NavLink>
           <ResumeLinkContainer
             initial={{ opacity: 0 }}
@@ -71,6 +88,7 @@ const Navbar = () => {
             animate={{ opacity: 1 }}>
             <NavResumeLink>
               <a
+                aria-label="Jayden Doll's Resume Link"
                 href="https://drive.google.com/file/d/1uTvY_r14mFieR0HN7Vrk4Y4YhtbAH4UE/view"
                 rel="noopener noreferrer"
                 target="_blank">

@@ -19,7 +19,7 @@ export const Wrapper = styled.section`
   }
 `;
 
-export const SectionContent = styled.div`
+export const SectionContent = styled.footer`
   display: flex;
   justify-content: center;
   align-items: center;

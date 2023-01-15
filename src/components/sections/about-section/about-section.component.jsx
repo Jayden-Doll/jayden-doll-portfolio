@@ -32,7 +32,7 @@ const AboutSection = () => {
               <ProjectDecorationContent />
             </ProjectDecoration>
             <ProjectImage
-              alt="Jayden Doll"
+              alt="Picture of Jayden Doll"
               src={aboutPicture}
             />
           </ImageContainer>

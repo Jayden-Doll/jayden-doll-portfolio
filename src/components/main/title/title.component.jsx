@@ -8,7 +8,7 @@ const Title = ({ text, element }) => {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}>
       <TitleText as={element}>{text}</TitleText>
-      <TitleUnderline />
+      <TitleUnderline alt="" />
     </TitleContainer>
   );
 };

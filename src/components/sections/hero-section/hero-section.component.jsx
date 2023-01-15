@@ -36,7 +36,11 @@ const HeroSection = () => {
           transition={{ delay: 1.1, duration: 0.5 }}
           animate={{ opacity: 1 }}>
           <CtaButtonLink>
-            <a href="#projects">View My Projects</a>
+            <a
+              aria-label="Jump To Jayden's Projects"
+              href="#projects">
+              View My Projects
+            </a>
           </CtaButtonLink>
         </CtaButtonContainer>
       </HeroContent>
