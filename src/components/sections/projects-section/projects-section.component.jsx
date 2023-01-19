@@ -55,7 +55,7 @@ const ProjectsSection = () => {
             imgSrc={planetviewer}
             altText="Planetviewer Homepage"
             title="PlanetViewer"
-            desc="A site featuring a rotating solar system, seamless page transitions, and 3D models of the planets rendered with Spline."
+            desc="A web app featuring a rotating solar system, seamless page transitions, and 3D models of the planets rendered with Spline."
             desc2="Planet data is presented in a structured way and utilizes a custom serverless API that feeds data for each planet on page render."
             tags="REACT STYLED-COMPONENTS FRAMER-MOTION FIGMA SPLINE"
             codeLink="https://github.com/Jayden-Doll/PlanetViewer"

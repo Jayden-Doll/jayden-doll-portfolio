@@ -28,8 +28,8 @@ const HeroSection = () => {
           initial={{ opacity: 0 }}
           transition={{ delay: 1, duration: 0.5 }}
           animate={{ opacity: 1 }}>
-          I’m a self-taught front-end developer with a drive for making fun,
-          visually appealing and interactive web content.
+          I’m a front-end developer with a drive for making fun, visually
+          appealing and interactive web content.
         </Description>
         <CtaButtonContainer
           initial={{ opacity: 0 }}
