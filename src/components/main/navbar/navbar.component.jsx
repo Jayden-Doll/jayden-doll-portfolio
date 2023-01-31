@@ -89,7 +89,7 @@ const Navbar = () => {
             <NavResumeLink>
               <a
                 aria-label="Jayden Doll's Resume Link"
-                href="https://drive.google.com/file/d/1uTvY_r14mFieR0HN7Vrk4Y4YhtbAH4UE/view"
+                href="https://drive.google.com/file/d/1XTuIO2EjWYxDd91Qc_vTcrMWkECBlcWz/view"
                 rel="noopener noreferrer"
                 target="_blank">
                 Resume

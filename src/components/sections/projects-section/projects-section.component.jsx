@@ -39,7 +39,7 @@ const ProjectsSection = () => {
             desc2="Utilizes the localStorage API and React state to store information for each day."
             tags="REACT STYLED-COMPONENTS CSS FIGMA"
             codeLink="https://github.com/Jayden-Doll/YogaDays-Yoga-Tracker"
-            liveLink="https://yogadays.netlify.app/"
+            liveLink="https://yogadayscalendar.com/"
           />
           <ProjectTile
             imgSrc={matchem}
